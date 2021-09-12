@@ -2,7 +2,7 @@ const { CommandInteraction } = require('discord.js')
 
 module.exports = {
 	name: "verify",
-	description: 'role',
+	description: '인증',
 	/**
 	 * @param { CommandInteraction } Interaction
 	 */
