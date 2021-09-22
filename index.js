@@ -11,6 +11,13 @@ for(const file of commandFiles) {
 	client.commands.set(command.name, command);
 	data.push({name: command.name, description: command.description, options:command.options});
 }
+client.on('guildMemberRemove', guildMember =>{
+    if(guildMember.roles.cache.find(r => r.id === "859625552654762005")){
+    guildMember.send(`${guildMember.guild}에서 뮤트된상태로 서버를 나가 밴처리 되었습니다 문의할 사항이 있으시다면 ${guildMember.guild.owner.user.tag}에게 따지십시오`)
+  guildMember.ban()
+  }
+}) 
+
 
 client.once('ready', async () => {
 	console.log(`Logged In As ${client.user.tag}`)
