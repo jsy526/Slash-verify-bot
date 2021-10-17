@@ -23,7 +23,7 @@ client.on('messageUpdate', async(oldMessage, newMessage) => {
     .addField('수정 후 메시지:', newMessage.content)
     .setFooter(oldMessage.author.tag, img)
     .setTimestamp()
-    client.channels.cache.get('898819684089081876').send({ embeds: [embed] })
+    client.channels.cache.get('899245273413451807').send({ embeds: [embed] })
   })
   
   
@@ -42,7 +42,7 @@ client.on('messageUpdate', async(oldMessage, newMessage) => {
 
 client.once('ready', async () => {
 	console.log(`Logged In As ${client.user.tag}`)
-	await client.guilds.cache.get('858592458651992084')?.commands.set(data)
+	await client.guilds.cache.get('899245273413451807')?.commands.set(data)
 });
 
 const Dokdo = require('dokdo')
