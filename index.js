@@ -37,7 +37,7 @@ client.on('messageUpdate', async(oldMessage, newMessage) => {
   .addField('삭제된 메시지:', message.content)
   .setFooter(message.author.tag, img)
   .setTimestamp()
-  client.channels.cache.get('898819684089081876').send({ embeds: [embed] })
+  client.channels.cache.get('899245273413451807').send({ embeds: [embed] })
   });
 
 client.once('ready', async () => {
