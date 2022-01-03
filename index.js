@@ -56,7 +56,7 @@ client.on('messageUpdate', async(oldMessage, newMessage) => {
       //  const role_3 = message.createReactionCollector(Filter_3, {time: 900000, dispose: true});
 
      //   role_1.on("collect", async (reaction, user) => {
-            await reaction.message.guild.members.cache.get(user.id).roles.add('903529970708660234')
+            //await reaction.message.guild.members.cache.get(user.id).roles.add('903529970708660234')
       //  });
 
       //  role_2.on("collect", async (reaction, user) => {
