@@ -1,4 +1,4 @@
-const { CommandInteraction } = require('discord.js')
+\const { CommandInteraction } = require('discord.js')
 
 module.exports = {
 	name: "verify",
@@ -9,7 +9,7 @@ module.exports = {
 
 	async execute(interaction) {        
 		await interaction.reply({ content: '성공적으로 지급 되었습니다!', ephemeral: true });
-        interaction.member.roles.add("858870021265686569");
+       interaction.member.roles.add("927392548694163496");
 		
-	}
+     }
 }
