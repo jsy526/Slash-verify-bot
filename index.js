@@ -31,13 +31,13 @@ client.on('messageUpdate', async(oldMessage, newMessage) => {
   client.on('messageDelete', async message => {
   if(message.author.bot) return
   const img = message.author.avatar ? `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.webp?size=256` : undefined;
-  const embed = new MessageEmbed() 
+  const embed1 = new MessageEmbed() 
   .setTitle(`**${message.author.tag}**님이 메시지를 삭제했습니다.`)
   .setColor('#FFFF')
   .addField('삭제된 메시지:', message.content)
   .setFooter(message.author.tag, img)
   .setTimestamp()
-  client.channels.cache.get('927389830780968980').send({ embeds: [embed] })
+  client.channels.cache.get('927482761718169620').send({ embeds: [embed1] })
   });
 
  // client.on('message', message =>{
